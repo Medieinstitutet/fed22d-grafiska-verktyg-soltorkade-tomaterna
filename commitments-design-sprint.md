@@ -12,3 +12,4 @@
 
 Filip Hedlén
 Sebastian Post
+Samuel Zainali
