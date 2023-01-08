@@ -7,3 +7,8 @@
 
 ABOUT THE DESIGN
 ----------------
+
+Vi började med den brandgula färgen och använde sedan en palettgenerator för att hitta andra färger som fungerar bra ihop med den.
+Fonten valde vi för simpliciteten och tillgängligheten, enkel och bra.
+För basdesignen har vi tagit inspiration från diverse andra restaurang/budföretag.
+Loggan är egendesignad i programmet Canva.
