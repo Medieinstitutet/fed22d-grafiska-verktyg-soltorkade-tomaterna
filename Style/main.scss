@@ -47,8 +47,55 @@ body {
 
 h1 {
   color: white;
+  font-weight: 40px;
+  margin-left:15px ;
 }
 
 .text {
   color: white;
+  margin: 50px;
+}
+
+.buttons {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+}
+
+.fetch {
+  border-radius: 10px;
+  height: 2rem;
+  width: 5rem;
+  background-color: #0081c9;
+  color: white;
+  font-weight: bold;
+}
+
+.fetch:hover {
+  background-color: #ff9800;
+  color: black;
+}
+
+.delivery {
+  border-radius: 10px;
+  height: 2rem;
+  width: 5rem;
+  background-color: #0081c9;
+  color: white;
+  font-weight: bold;
+}
+
+.delivery:hover {
+  background-color: #ff9800;
+  color: black;
+}
+
+.textSearch {
+  margin-left: 5rem;
+  border-radius: 15px;
+  height: 2rem;
+  width: 15rem;
+  text-align: center;
+  border: 1px solid black;
 }
