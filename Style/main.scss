@@ -1,0 +1,54 @@
+body {
+  background-color: #ff9800;
+  margin: 0;
+  padding: 0;
+}
+
+.findJob {
+  display: block;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+.navColor {
+  background-color: #86e5ff;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.menuButton {
+  height: 35px;
+  width: 35px;
+  background: transparent;
+  border: none;
+}
+
+.menuButton span {
+  display: block;
+  background-color: black;
+  width: 35px;
+  height: 4px;
+  margin: 4px;
+  border-radius: 2px;
+}
+
+.openMenu {
+  display: none;
+}
+
+.section1 {
+  background-image: url(/assets/Images/Background-img-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+
+h1 {
+  color: white;
+}
+
+.text {
+  color: white;
+}
