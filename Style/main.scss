@@ -50,9 +50,10 @@ body {
 }
 
 h1 {
-  color: white;
-  font-weight: 40px;
-  margin-left: 4rem;
+  color: #fff;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 13px;
 }
 
 .text {
@@ -124,8 +125,9 @@ h2 {
 
 .textJob {
   color: white;
-  margin: 40px;
-  font-size: small;
+  margin-left: 35px;
+  margin-right: 35px;
+  font-size: 13px;
 }
 
 .jobs {
@@ -134,29 +136,33 @@ h2 {
   width: 7rem;
   font-weight: bold;
   margin-left: 7rem;
+  margin-top: 15px;
 }
 
 .applyJob {
   background-color: #f1f1f1;
   border: 1px solid;
   border-radius: 20px;
-  height: 45vh;
-  margin: 20px
+  height: 50vh;
+  margin: 20px;
 }
 
 .applyJob h4 {
   justify-content: center;
   display: flex;
   font-size: x-large;
+  margin-top: 4rem;
 }
 
-.applyJob a{
+.applyJob a {
   color: #ff9800;
   text-align: center;
   justify-content: center;
   display: flex;
+  justify-content: center;
   height: 4.5vh;
   font-size: small;
   margin: 10px;
+  flex-direction: column;
 }
 
