@@ -35,9 +35,34 @@ body {
   border-radius: 2px;
 }
 
-.openMenu {
-  display: none;
+.openMenu button {
+  background-color: transparent;
+  font-size: 30px;
+  border: none;
+  margin-bottom: 3rem;
 }
+
+.openMenu {
+  position: fixed;
+  display: none;
+  gap: 0;
+  flex-direction: column;
+  width: 100%;
+  transition: 0.7s;
+  font-size: 30px;
+  background-color: #fdfdfd;
+  height: 100%;
+}
+
+.active {
+  display: block;
+}
+
+.cross {
+  left: 18rem;
+  position: relative;
+}
+
 
 
 .background1 {
@@ -146,6 +171,7 @@ h2 {
   border-radius: 20px;
   height: 50vh;
   margin: 20px;
+  display: none;
 }
 
 .applyJob h4 {
