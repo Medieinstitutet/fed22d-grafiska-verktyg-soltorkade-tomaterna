@@ -54,6 +54,49 @@ h1 {
 
 .text {
   color: white;
+}
+
+footer {
+  background-color: #86e5ff;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.facebook {
+  position: relative;
+  top: 5px;
+}
+
+.rating {
+  color:  #ff9800;
+  font-weight: bold;
+}
+
+.row3 {
+  display: flex;
+}
+
+.klarna {
+  position: relative;
+  left: -4rem;
+}
+
+.mail {
+  border-radius: 8px;
+  display: inline;
+  width: 7rem;
+  height: 1.5rem;
+}
+
+.subsribe {
+  border-radius: 8px;
+  display: inline;
+}
+=======
   margin: 50px;
 }
 
@@ -141,5 +184,3 @@ h1 {
   display: flex;
   align-items: center;
 }
-
-
