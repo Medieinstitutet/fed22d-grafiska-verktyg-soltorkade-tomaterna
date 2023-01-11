@@ -2,6 +2,7 @@ body {
   background-color: #ff9800;
   margin: 0;
   padding: 0;
+
 }
 
 .findJob {
@@ -47,6 +48,8 @@ body {
 
 h1 {
   color: white;
+  font-weight: 40px;
+  margin-left:15px ;
 }
 
 .text {
@@ -92,4 +95,92 @@ footer {
 .subsribe {
   border-radius: 8px;
   display: inline;
+}
+=======
+  margin: 50px;
+}
+
+.buttons {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+}
+
+.fetch {
+  border-radius: 10px;
+  height: 2rem;
+  width: 5rem;
+  background-color: #0081c9;
+  color: white;
+  font-weight: bold;
+}
+
+.fetch:hover {
+  background-color: #ff9800;
+  color: black;
+}
+
+.delivery {
+  border-radius: 10px;
+  height: 2rem;
+  width: 5rem;
+  background-color: #0081c9;
+  color: white;
+  font-weight: bold;
+}
+
+.delivery:hover {
+  background-color: #ff9800;
+  color: black;
+}
+
+.textSearch {
+  margin-left: 5rem;
+  border-radius: 15px;
+  height: 2rem;
+  width: 15rem;
+  text-align: center;
+  border: 1px solid black;
+}
+
+
+
+/*******************************Mostapha***********************/
+.section2 {
+  display: flex;
+}
+
+.section2 div {
+  background-color: #86e5ff;
+  width: 5rem;
+  border: solid 3px #000;
+  border-radius: 10px;
+  height: 5rem;
+  text-align: center;
+  padding: 10px;
+  margin: 0.4rem;
+  font-size: small;
+}
+
+.section2 img {
+  border-radius: 10px;
+}
+
+.section2-header {
+  text-align: center;
+}
+
+.section2 div h4{
+  margin: 0;
+}
+
+.section2 div h6 {
+  margin: 0;
+}
+
+.fa-solid {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
 }
