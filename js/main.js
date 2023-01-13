@@ -1,13 +1,14 @@
 
 const hamburger = document.querySelector('.menuButton');
 const navMenu = document.querySelector('.openMenu');
+const closeMenu = document.querySelector('.closeMenu')
 
 const apply = document.querySelector('.applyJob');
 const applyBtn = document.querySelector('.jobs');
 const applyClose = document.querySelector('.closeApply');
 
 hamburger.addEventListener('click', menuOpen);
-navMenu.addEventListener('click', navOpen);
+closeMenu.addEventListener('click', navOpen);
 
 applyBtn.addEventListener('click', openJob);
 applyClose.addEventListener('click', closeJob );

@@ -271,6 +271,7 @@ h2 {
   font-size: 3rem;
   display: flex;
   align-items: center;
+  color: orange;
 }
 
 footer {
@@ -288,9 +289,27 @@ footer {
   top: 5px;
 }
 
+.row2 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 10px;
+}
+
+.row2 .fa-solid {
+  color: orange;
+  font-size: 1rem;
+}
+
+.fa-sharp {
+  color: orange;
+  font-size: 1rem;
+}
+
 .rating {
   color: #ff9800;
   font-weight: bold;
+  font-size: 0.7rem;
   margin: 0;
 }
 
