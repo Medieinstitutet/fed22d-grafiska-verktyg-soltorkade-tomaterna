@@ -235,6 +235,7 @@ h2 {
 /*******************************Mostapha***********************/
 .section2 {
   display: flex;
+  align-items: center;
 }
 
 .section2 div {
@@ -362,3 +363,25 @@ form {
   max-width: fit-content;
 }
 
+/*************************Tablet***********************************************/
+
+@media screen and (min-width: 820px) {
+  .section2 {
+    width: 10rem;
+    height: 7rem;
+    margin: 2.5rem;
+    font-size: large;
+  }
+  .section2 div {
+    width: 10rem;
+    height: 7rem;
+    font-size: large;
+  }  
+  .section2 img {
+    width: 10rem;
+    height: 5rem;
+  }
+
+ 
+   
+}
