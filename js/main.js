@@ -1,4 +1,3 @@
-
 const hamburger = document.querySelector('.menuButton');
 const navMenu = document.querySelector('.openMenu');
 const closeMenu = document.querySelector('.closeMenu')
