@@ -104,11 +104,13 @@ h1 {
 .next{
   background-color: transparent;
   border: none;
+  font-size: 3rem;
 }
 
 .prev{
   background-color: transparent;
   border: none;
+  font-size: 3rem;
 }
 
 .arrow{
@@ -166,12 +168,21 @@ h1 {
 }
 
 .textSearch {
-  margin-left: 5rem;
   border-radius: 15px;
   height: 2rem;
   width: 15rem;
   text-align: center;
   border: 1px solid black;
+  margin-left: 11px;
+  margin-top: 3px;
+}
+
+.searchContainer {
+  background-color: white;
+  border-radius: 40px;
+  height: 13%;
+  width: 30%;
+  position: relative;
 }
 
 .background2 {
@@ -278,12 +289,6 @@ h2 {
   margin: 0;
 }
 
-.fa-solid {
-  font-size: 3rem;
-  display: flex;
-  align-items: center;
-  color: orange;
-}
 
 footer {
   background-color: #86e5ff;
@@ -380,12 +385,18 @@ form {
   .openMenu {
     position: relative;
     display: flex;
-    gap: 0;
     flex-direction: row;
     width: 100%;
     font-size: 15px;
     background-color: transparent;
     gap: 10px;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  .menuButton {
+    margin-right: 25rem;
+    visibility: hidden;
   }
 
   .desktopLogo {
@@ -397,17 +408,54 @@ form {
   }
 
   .search {
+    display: none;  
+  }
+
+  .searchJob {
     display: none;
+  }
+
+  .desktopSearch {
+    display: flex;
+    align-items: center;
   }
 
   hr {
     display: none;
   }
 
+  h1 {
+    font-size: 40px;
+    margin-left: 15rem;
+  }
 
-h1 {
-  font-size: 40px;
-  margin-left: 15rem;
-}
+
+  .textSearch {
+    border-radius: 15px;
+    height: 1.5rem;
+    width: 29rem;
+    text-align: center;
+    border: 1px solid black;
+    margin-left: 7px;
+    margin-top: 4px;
+    border: none;
+  }
+  
+  .searchContainer {
+    background-color: white;
+    border-radius: 40px;
+    height: 10%;
+    width: 50%;
+    margin-left: 15rem;
+    position: relative;
+  }
+
+  .next {
+    color: white;
+  }
+
+  .prev {
+    color: white;
+  }
 
 }
