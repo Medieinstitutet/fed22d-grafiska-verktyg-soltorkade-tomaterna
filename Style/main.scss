@@ -75,7 +75,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 1px 1px 1px;
-  height: 45vh;
+  height: 60vh;
 }
 
 .cookies{
@@ -83,10 +83,11 @@ body {
 }
 
 h1 {
-  color: #fff;
+  color: white;
   margin-left: 40px;
   margin-right: 40px;
-  font-size: 13px;
+  padding-top: 30px;
+  font-size: 20px;
 }
 
 .next{
@@ -114,8 +115,8 @@ h1 {
 
 .text {
   color: white;
-  margin-left: 20px;
-  margin-right: 20px;
+
+  font-size: 12px;
 }
 
 .buttons {
@@ -167,6 +168,7 @@ h1 {
   background-repeat: no-repeat;
   background-size:cover;
   box-shadow: 1px 1px 1px;
+  opacity: 80%;
   height: 40vh;
 }
 
@@ -362,3 +364,13 @@ form {
   max-width: fit-content;
 }
 
+@media screen and (min-width:1024px) {
+  
+h1 {
+  font-size: 40px;
+  margin-left: 15rem;
+}
+
+.background1{
+}
+}
