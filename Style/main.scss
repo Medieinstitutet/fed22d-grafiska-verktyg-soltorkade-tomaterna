@@ -27,6 +27,11 @@ body {
   border: none;
 }
 
+.menuButton {
+  background-color: transparent;
+  border: none;
+}
+
 .menuButton span {
   display: block;
   background-color: black;
@@ -53,6 +58,12 @@ body {
   font-size: 30px;
   background-color: #fdfdfd;  
   height: 100%;
+  z-index: 1;
+}
+
+.closeMenu {
+  left: 8rem;
+  display: flex;
 }
 
 .active {
@@ -365,12 +376,38 @@ form {
 }
 
 @media screen and (min-width:1024px) {
-  
+
+  .openMenu {
+    position: relative;
+    display: flex;
+    gap: 0;
+    flex-direction: row;
+    width: 100%;
+    font-size: 15px;
+    background-color: transparent;
+    gap: 10px;
+  }
+
+  .desktopLogo {
+    display: none;
+  }
+
+  .closeMenu {
+    display: none;
+  }
+
+  .search {
+    display: none;
+  }
+
+  hr {
+    display: none;
+  }
+
+
 h1 {
   font-size: 40px;
   margin-left: 15rem;
 }
 
-.background1{
-}
 }
