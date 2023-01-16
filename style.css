@@ -95,3 +95,13 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.fa-solid, .fas {
+  font-weight: 900;
+  display: none;
+}
+
+.fa-chevron-right:before {
+    content: "\f054";
+    display: none;
+}

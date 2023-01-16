@@ -317,7 +317,7 @@ footer {
   gap: 10px;
 }
 
-.row2 .fa-solid {
+.row2 .starFooter {
   color: orange;
   font-size: 1rem;
 }
@@ -404,7 +404,7 @@ form {
     height: 5rem;
   }
 
-  .fa-solid { 
+  .iconMobil { 
     display: none;
   }
 
@@ -524,10 +524,11 @@ form {
 
   .section2 {
     display: grid;
-    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr ;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr ;
     font-size: large;
+    margin-left: 7rem;
     justify-content: space-between;
-    gap: 10px;
+    gap: 30px;
     padding: 0;
   }
 
@@ -536,8 +537,14 @@ form {
     margin: 0;
   }
 
-  .fa-solid {
+  .fa-solid, .fas {
+    font-weight: 900;
     display: none;
+  }
+  
+  .fa-chevron-right:before {
+      content: "\f054";
+      display: none;
   }
 
   .section2 div {
