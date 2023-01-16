@@ -20,30 +20,36 @@
         <span class="stick2"></span>
         <span class="stick"></span>
       </button>
+      <img src="/assets/Images/Main-Logo.png" height="80" width="80">
       <nav class="openMenu">
         <div class="closeMenu">
           <i class="fa-solid fa-x"></i>
-        </div>
-        <button>
+        </div> 
+        <button class="search">
           <i class='bx bx-search'></i>
-        </button>
-        <button class="cross">
-          <i class="fa-light fa-xmark"></i>
         </button>
         <br>
         <a href="#">Menu</a>
         <hr>
-        <a href="#">Kontakta</a>
-        <hr>
+        <div class="mobileContact">
+          <a href="#">Kontakt</a>
+        </div>
+          <hr>
         <a href="#">Om oss</a>
         <hr>
-        <a href="#">Lediga jobb</a>
+        <a href="#" class="searchJob">Lediga jobb</a>
         <hr>
         <a href="#">App</a>
         <hr>
-        <img src="/assets/Images/Menu-Logo.png" width="400" height="400" >
+        <button class="desktopContact">
+          <a href="#">Kontakt</a>
+        </button>
+        <img  class="desktopLogo" src="/assets/Images/Menu-Logo.png" width="400" height="400" >
+        <button class="desktopSearch">
+          <i class='bx bx-search'></i>
+        </button>
       </nav>
-      <img src="/assets/Images/Main-Logo.png" height="80" width="80">
+
     </div>
   </header>
 
@@ -72,9 +78,12 @@
             <button class="delivery">Leverans</button>
           </div>
             <br>
-          <label for=""><input class="textSearch" placeholder="Din adress (t ex Drottninggatan 1C)">
-          <i class='bx bx-search'></i>
-          </label>
+          <div class="searchContainer">
+            <label for="">
+              <input class="textSearch" placeholder="Din adress (t ex Drottninggatan 1C)">
+              <i class='bx bx-search'></i>
+            </label>
+        </div>
       </section>
     <section class="background2 none">
       <h2>Jobba hos oss</h2>
@@ -160,8 +169,7 @@
     <div>
       <img class="klarna" src="/assets/Images/Klarna-logo-png.png" height="60" width="170">
     </div>
-    
-    <div>
+    <div class="subscribeContainer">
       <p class="news">Anmäl dig till vårt nyhetsbrev</p>
       <form>
       <input class="mail" placeholder="Ange e-postadress">
