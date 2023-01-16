@@ -48,6 +48,10 @@ body {
   margin-bottom: 3rem;
 }
 
+.desktopContact {
+  display: none;
+}
+
 .openMenu {
   position: fixed;
   display: none;
@@ -79,7 +83,9 @@ body {
   position: relative;
 }
 
-
+.section1 {
+  display: flex;
+}
 
 .background1 {
   background-image: url(/assets/Images/Background-img-1.jpg);
@@ -186,21 +192,20 @@ h1 {
 }
 
 .background2 {
-  background-image: url(/assets/Images/Background-img-2.jpg);
+  background-image: url(/assets/Images/Background-img-2ny.jpg);
   background-repeat: no-repeat;
   background-size:cover;
   box-shadow: 1px 1px 1px;
-  opacity: 80%;
   height: 40vh;
 }
 
 h2 {
   color: white;
-  font-weight: 40px;
+  font-weight: bolder;
   display:flex;
   justify-content: center;
   margin-top: 0px;
-  padding-top: 3rem;
+  padding-top: 3rem; 
 }
 
 .textJob {
@@ -414,9 +419,35 @@ form {
     width: 100%;
     font-size: 15px;
     background-color: transparent;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
     font-size: 15px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .mobileContact {
+    display: none;
+  }
+  
+  .openMenu .desktopContact { 
+    display: block;
+    align-items: center;
+    font-size: 10px;
+    display: flex;
+    margin-top: 3px;
+    margin-bottom: 0;
+    background-color: #ff9800;
+    border-radius: 20%;
+    height: 23px;
+    color: black;
+    text-decoration: none;
+    box-shadow: 1px 0px 1px 1px grey;  
+    justify-content: center;
+    width: 3.3rem;
   }
 
   .menuButton {
@@ -443,6 +474,7 @@ form {
   .desktopSearch {
     display: flex;
     align-items: center;
+    display: contents;
   }
 
   hr {
@@ -451,28 +483,34 @@ form {
 
   h1 {
     font-size: 40px;
-    margin-left: 15rem;
+    margin-left: 20rem;
   }
 
+  .jobs {
+    margin-left: 35rem;
+  }
 
   .textSearch {
     border-radius: 15px;
     height: 1.5rem;
-    width: 29rem;
-    text-align: center;
+    width: 30rem;
+    text-align: start;
     border: 1px solid black;
-    margin-left: 7px;
+    margin-left: 10px;
     margin-top: 4px;
     border: none;
+    position: relative;
+    justify-content:space-between ;
   }
   
   .searchContainer {
     background-color: white;
     border-radius: 40px;
     height: 10%;
-    width: 50%;
-    margin-left: 15rem;
+    width: 33rem;
+    margin-left: 20rem;
     position: relative;
+    justify-content: space-between;
   }
 
   .next {
@@ -496,7 +534,7 @@ form {
   .section2-header {
     padding: 0; 
     margin: 0;
-  } 
+  }
 
   .fa-solid {
     display: none;
@@ -510,5 +548,14 @@ form {
   .section2 img {
     width: 9rem;
     height: 5rem;
+  }
+
+  .row3 {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .row2 {
+    justify-content: center;
   }
 }
