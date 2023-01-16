@@ -380,6 +380,31 @@ form {
   max-width: fit-content;
 }
 
+
+@media screen and (min-width: 820px) {
+  .section2 {
+    width: 10rem;
+    height: 7rem;
+    margin-bottom: 2.5rem;
+    margin-left: 2rem;
+    font-size: large;
+  }
+  .section2 div {
+    width: 10rem;
+    height: 7rem;
+    font-size: large;
+  }  
+  .section2 img {
+    width: 10rem;
+    height: 5rem;
+  }
+
+  .fa-solid { 
+    display: none;
+  }
+
+}
+
 @media screen and (min-width:1024px) {
 
   .openMenu {
@@ -458,4 +483,32 @@ form {
     color: white;
   }
 
+
+  .section2 {
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr ;
+    font-size: large;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .section2-header {
+    padding: 0; 
+    margin: 0;
+  } 
+
+  .fa-solid {
+    display: none;
+  }
+
+  .section2 div {
+    width: 9rem;
+    height: 7rem;
+    font-size: large;
+  }  
+  .section2 img {
+    width: 9rem;
+    height: 5rem;
+  }
 }
