@@ -602,9 +602,9 @@ form {
     display: grid;
     grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr ;
     font-size: large;
-    margin-left: 7rem;
+    margin-left: 2rem;
     justify-content: space-between;
-    gap: 30px;
+    gap: 20px;
     padding: 0;
   }
 
@@ -656,7 +656,7 @@ form {
 
   .row3 {
     position: relative;
-    right: -12rem;
+    right: -10rem;
     bottom: 0;
     align-items: center;
   }
