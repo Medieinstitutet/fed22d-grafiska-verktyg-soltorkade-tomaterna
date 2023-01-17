@@ -294,15 +294,26 @@ h2 {
   margin: 0;
 }
 
-
 footer {
   background-color: #86e5ff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+figure {
+  display: none;
 }
 
 .row1 {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  display: inline;
+}
+
+.row1 p {
+  display: inline;
 }
 
 .facebook {
@@ -315,6 +326,7 @@ footer {
   align-items: center;
   margin: 0;
   gap: 10px;
+  display: inline;
 }
 
 .row2 .starFooter {
@@ -332,6 +344,7 @@ footer {
   font-weight: bold;
   font-size: 0.7rem;
   margin: 0;
+  display: inline;
 }
 
 .row3 {
@@ -406,6 +419,24 @@ form {
 
   .iconMobil { 
     display: none;
+  }
+
+  figure {
+    display: flex;
+    position: relative;
+    left: -4rem;
+    align-items: center;
+  }
+
+  .klarna {
+    display: none;
+  }
+
+  .row3 {
+    position: relative;
+    right: -40rem;
+    bottom: 6rem;
+    align-items: center;
   }
 
 }
@@ -521,7 +552,6 @@ form {
     color: white;
   }
 
-
   .section2 {
     display: grid;
     grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr ;
@@ -557,12 +587,32 @@ form {
     height: 5rem;
   }
 
-  .row3 {
-    justify-content: space-between;
-    align-items: center;
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .row2 {
-    justify-content: center;
+    align-items: center;
+    display: flex;
   }
+
+  .klarna {
+    display: none;
+  }
+
+  figure {
+    display: flex;
+    position: relative;
+    left: -4rem;
+    align-items: center;
+  }
+
+  .row3 {
+    position: relative;
+    right: -12rem;
+    bottom: 0;
+    align-items: center;
+  }
+
 }
