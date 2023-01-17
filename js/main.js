@@ -6,11 +6,21 @@ const apply = document.querySelector('.applyJob');
 const applyBtn = document.querySelector('.jobs');
 const applyClose = document.querySelector('.closeApply');
 
+const cookies = document.querySelector('.cookies');
+const cookiesBtn = document.querySelector('.accept');
+
 hamburger.addEventListener('click', menuOpen);
 closeMenu.addEventListener('click', navOpen);
 
 applyBtn.addEventListener('click', openJob);
 applyClose.addEventListener('click', closeJob );
+
+cookiesBtn.addEventListener('click', closeCookies);
+
+function closeCookies() {
+    cookies.classList.toogle('none');
+    console.log(cookies);
+}
 
 function menuOpen () {
     hamburger.classList.remove('active');
@@ -25,6 +35,7 @@ function navOpen () {
 function openJob () {
     apply.classList.remove('none');
 }
+
 function closeJob () {
     apply.classList.toggle('none');
 }
