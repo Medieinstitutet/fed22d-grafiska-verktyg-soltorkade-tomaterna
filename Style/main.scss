@@ -5,7 +5,6 @@ body {
 
 }
 
-
 .findJob {
   display: block;
   text-align: center;
@@ -134,7 +133,6 @@ h1 {
 
 .text {
   color: white;
-
   font-size: 12px;
 }
 
@@ -400,6 +398,50 @@ form {
 
 
 @media screen and (min-width: 820px) {
+
+  .cookies {
+    display: flex;
+    background-color: #FF9800;
+    width: 80vw;
+    margin: auto;
+    margin-top: 10px;
+    justify-content: space-around;
+    border-radius: 10px;
+    opacity: 0.8;
+  }
+
+  .open {
+    display: none;
+  }
+
+  .cookiesHeading {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  .cookiesText {
+    position: relative;
+    left: 1rem;
+  }
+
+  .buttonContainer {
+    padding: 90px 0;
+  }
+
+  .accept {
+    border-radius: 10px;
+    height: 2.5rem;
+    width: 6rem;
+    background-color: #86E5FF;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .accept:hover {
+    background-color: #FF9800;
+    color: black;
+  }
+  
   .section2 {
     width: 10rem;
     height: 7rem;
@@ -442,6 +484,10 @@ form {
 }
 
 @media screen and (min-width:1024px) {
+
+  .cookies {
+    display: none;
+  }
 
   .openMenu {
     position: relative;
