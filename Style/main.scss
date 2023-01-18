@@ -265,6 +265,7 @@ h2 {
 /*******************************Mostapha***********************/
 .section2 {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .section2 div {
@@ -297,6 +298,12 @@ h2 {
   font-weight: bold;
 }
 
+.btnNextOne {
+  color: black;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  
 footer {
   background-color: #86e5ff;
   display: flex;
@@ -400,7 +407,6 @@ form {
   color: gray;
   max-width: fit-content;
 }
-
 
 @media screen and (min-width: 820px) {
 
@@ -685,3 +691,4 @@ form {
   }
 
 }
+
