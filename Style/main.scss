@@ -2,9 +2,8 @@ body {
   background-color: #ff9800;
   margin: 0;
   padding: 0;
-
+  font-family: Helvetica, sans-serif;
 }
-
 
 .findJob {
   display: block;
@@ -27,6 +26,11 @@ body {
   border: none;
 }
 
+.menuButton {
+  background-color: transparent;
+  border: none;
+}
+
 .menuButton span {
   display: block;
   background-color: black;
@@ -43,6 +47,10 @@ body {
   margin-bottom: 3rem;
 }
 
+.desktopContact {
+  display: none;
+}
+
 .openMenu {
   position: fixed;
   display: none;
@@ -53,6 +61,12 @@ body {
   font-size: 30px;
   background-color: #fdfdfd;  
   height: 100%;
+  z-index: 1;
+}
+
+.closeMenu {
+  left: 8rem;
+  display: flex;
 }
 
 .active {
@@ -68,14 +82,16 @@ body {
   position: relative;
 }
 
-
+.section1 {
+  display: flex;
+}
 
 .background1 {
   background-image: url(/assets/Images/Background-img-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 1px 1px 1px;
-  height: 45vh;
+  height: 60vh;
 }
 
 .cookies{
@@ -83,20 +99,24 @@ body {
 }
 
 h1 {
-  color: #fff;
+  color: white;
   margin-left: 40px;
   margin-right: 40px;
-  font-size: 13px;
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .next{
   background-color: transparent;
   border: none;
+  font-size: 3rem;
 }
 
 .prev{
   background-color: transparent;
   border: none;
+  font-size: 3rem;
 }
 
 .arrow{
@@ -114,8 +134,8 @@ h1 {
 
 .text {
   color: white;
-  margin-left: 20px;
-  margin-right: 20px;
+  font-size: 12px;
+  line-height: 14px;
 }
 
 .buttons {
@@ -154,16 +174,25 @@ h1 {
 }
 
 .textSearch {
-  margin-left: 5rem;
   border-radius: 15px;
   height: 2rem;
   width: 15rem;
   text-align: center;
   border: 1px solid black;
+  margin-left: 11px;
+  margin-top: 3px;
+}
+
+.searchContainer {
+  background-color: white;
+  border-radius: 40px;
+  height: 13%;
+  width: 30%;
+  position: relative;
 }
 
 .background2 {
-  background-image: url(/assets/Images/Background-img-2.jpg);
+  background-image: url(/assets/Images/Background-img-2ny.jpg);
   background-repeat: no-repeat;
   background-size:cover;
   box-shadow: 1px 1px 1px;
@@ -172,11 +201,11 @@ h1 {
 
 h2 {
   color: white;
-  font-weight: 40px;
+  font-weight: bold;
   display:flex;
   justify-content: center;
   margin-top: 0px;
-  padding-top: 3rem;
+  padding-top: 3rem; 
 }
 
 .textJob {
@@ -208,6 +237,7 @@ h2 {
   display: flex;
   font-size: x-large;
   margin-top: 4rem;
+  font-weight: bold;
 }
 
 .applyJob a {
@@ -260,10 +290,12 @@ h2 {
 
 .section2 div h4{
   margin: 0;
+  font-weight: bold;
 }
 
 .section2 div h6 {
   margin: 0;
+  font-weight: bold;
 }
 
 .btnNextOne {
@@ -271,16 +303,27 @@ h2 {
   font-size: 3rem;
   display: flex;
   align-items: center;
-}
-
+  
 footer {
   background-color: #86e5ff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+figure {
+  display: none;
 }
 
 .row1 {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  display: inline;
+}
+
+.row1 p {
+  display: inline;
 }
 
 .facebook {
@@ -293,23 +336,25 @@ footer {
   align-items: center;
   margin: 0;
   gap: 10px;
+  display: inline;
 }
 
-.row2 .fa-solid {
+.row2 .starFooter {
   color: orange;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .fa-sharp {
   color: orange;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .rating {
   color: #ff9800;
   font-weight: bold;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   margin: 0;
+  display: inline;
 }
 
 .row3 {
@@ -363,12 +408,57 @@ form {
   max-width: fit-content;
 }
 
-/*************************Tablet***********************************************/
-
 @media screen and (min-width: 820px) {
-  .section2 {
+
+  .cookies {
     display: flex;
-    justify-content: space-evenly;
+    background-color: #FF9800;
+    width: 80vw;
+    margin: auto;
+    margin-top: 10px;
+    justify-content: space-around;
+    border-radius: 10px;
+    opacity: 0.8;
+  }
+
+  .open {
+    display: none;
+  }
+
+  .cookiesHeading {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  .cookiesText {
+    position: relative;
+    left: 1rem;
+  }
+
+  .buttonContainer {
+    padding: 90px 0;
+  }
+
+  .accept {
+    border-radius: 10px;
+    height: 2.5rem;
+    width: 6rem;
+    background-color: #86E5FF;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .accept:hover {
+    background-color: #FF9800;
+    color: black;
+  }
+  
+  .section2 {
+    width: 10rem;
+    height: 7rem;
+    margin-bottom: 2.5rem;
+    margin-left: 2rem;
+    font-size: large;
   }
   .section2 div {
     width: 10rem;
@@ -380,10 +470,225 @@ form {
     height: 5rem;
   }
 
-  .footer {
-    
+  .iconMobil { 
+    display: none;
   }
 
- 
-   
+  figure {
+    display: flex;
+    position: relative;
+    left: -4rem;
+    align-items: center;
+  }
+
+  .row2 .starFooter {
+    color: orange;
+    font-size: 1rem;
+  }
+  
+  .fa-sharp {
+    color: orange;
+    font-size: 1rem;
+  }
+  
+  .rating {
+    color: #ff9800;
+    font-weight: bold;
+    font-size: 0.7rem;
+    margin: 0;
+    display: inline;
+  }
+
+  .klarna {
+    display: none;
+  }
+
+  .row3 {
+    position: relative;
+    right: -39rem;
+    bottom: 6rem;
+    align-items: center;
+  }
+
 }
+
+@media screen and (min-width:1024px) {
+
+  .cookies {
+    display: none;
+  }
+
+  .openMenu {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 15px;
+    background-color: transparent;
+    gap: 15px;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .mobileContact {
+    display: none;
+  }
+  
+  .openMenu .desktopContact { 
+    display: block;
+    align-items: center;
+    font-size: 10px;
+    display: flex;
+    margin-top: 3px;
+    margin-bottom: 0;
+    background-color: #ff9800;
+    border-radius: 20%;
+    height: 23px;
+    color: black;
+    text-decoration: none;
+    box-shadow: 1px 0px 1px 1px grey;  
+    justify-content: center;
+    width: 3.3rem;
+  }
+
+  .menuButton {
+    margin-right: 25rem;
+    visibility: hidden;
+  }
+
+  .desktopLogo {
+    display: none;
+  }
+
+  .closeMenu {
+    display: none;
+  }
+
+  .search {
+    display: none;  
+  }
+
+  .searchJob {
+    display: none;
+  }
+
+  .desktopSearch {
+    display: flex;
+    align-items: center;
+    display: contents;
+  }
+
+  hr {
+    display: none;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-left: 20rem;
+  }
+
+  .jobs {
+    margin-left: 35rem;
+  }
+
+  .textSearch {
+    border-radius: 15px;
+    height: 1.5rem;
+    width: 30rem;
+    text-align: start;
+    border: 1px solid black;
+    margin-left: 10px;
+    margin-top: 4px;
+    border: none;
+    position: relative;
+    justify-content:space-between ;
+  }
+  
+  .searchContainer {
+    background-color: white;
+    border-radius: 40px;
+    height: 10%;
+    width: 33rem;
+    margin-left: 20rem;
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .next {
+    color: white;
+  }
+
+  .prev {
+    color: white;
+  }
+
+  .section2 {
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr ;
+    font-size: large;
+    margin-left: 2rem;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .section2-header {
+    padding: 0; 
+    margin: 0;
+  }
+
+  .fa-solid, .fas {
+    font-weight: 900;
+    display: none;
+  }
+  
+  .fa-chevron-right:before {
+      content: "\f054";
+      display: none;
+  }
+
+  .section2 div {
+    width: 9rem;
+    height: 7rem;
+    font-size: large;
+  }  
+  .section2 img {
+    width: 9rem;
+    height: 5rem;
+  }
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .row2 {
+    align-items: center;
+    display: flex;
+  }
+
+  .klarna {
+    display: none;
+  }
+
+  figure {
+    display: flex;
+    position: relative;
+    left: -4rem;
+    align-items: center;
+  }
+
+  .row3 {
+    position: relative;
+    right: -10rem;
+    bottom: 0;
+    align-items: center;
+  }
+
+}
+
