@@ -235,7 +235,7 @@ h2 {
 /*******************************Mostapha***********************/
 .section2 {
   display: flex;
-  align-items: center;
+  justify-content: space-evenly;
 }
 
 .section2 div {
@@ -266,11 +266,11 @@ h2 {
   margin: 0;
 }
 
-.fa-solid {
+.btnNextOne {
+  color: black;
   font-size: 3rem;
   display: flex;
   align-items: center;
-  color: orange;
 }
 
 footer {
@@ -367,10 +367,8 @@ form {
 
 @media screen and (min-width: 820px) {
   .section2 {
-    width: 10rem;
-    height: 7rem;
-    margin: 2.5rem;
-    font-size: large;
+    display: flex;
+    justify-content: space-evenly;
   }
   .section2 div {
     width: 10rem;
@@ -380,6 +378,10 @@ form {
   .section2 img {
     width: 10rem;
     height: 5rem;
+  }
+
+  .footer {
+    
   }
 
  
