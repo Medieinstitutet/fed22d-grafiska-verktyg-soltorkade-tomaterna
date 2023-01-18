@@ -2,7 +2,7 @@ body {
   background-color: #ff9800;
   margin: 0;
   padding: 0;
-
+  font-family: Helvetica, sans-serif;
 }
 
 .findJob {
@@ -104,6 +104,7 @@ h1 {
   margin-right: 40px;
   padding-top: 30px;
   font-size: 20px;
+  font-weight: bold;
 }
 
 .next{
@@ -134,6 +135,7 @@ h1 {
 .text {
   color: white;
   font-size: 12px;
+  line-height: 14px;
 }
 
 .buttons {
@@ -199,7 +201,7 @@ h1 {
 
 h2 {
   color: white;
-  font-weight: bolder;
+  font-weight: bold;
   display:flex;
   justify-content: center;
   margin-top: 0px;
@@ -235,6 +237,7 @@ h2 {
   display: flex;
   font-size: x-large;
   margin-top: 4rem;
+  font-weight: bold;
 }
 
 .applyJob a {
@@ -286,10 +289,12 @@ h2 {
 
 .section2 div h4{
   margin: 0;
+  font-weight: bold;
 }
 
 .section2 div h6 {
   margin: 0;
+  font-weight: bold;
 }
 
 footer {
@@ -329,18 +334,18 @@ figure {
 
 .row2 .starFooter {
   color: orange;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .fa-sharp {
   color: orange;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .rating {
   color: #ff9800;
   font-weight: bold;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   margin: 0;
   display: inline;
 }
@@ -470,13 +475,31 @@ form {
     align-items: center;
   }
 
+  .row2 .starFooter {
+    color: orange;
+    font-size: 1rem;
+  }
+  
+  .fa-sharp {
+    color: orange;
+    font-size: 1rem;
+  }
+  
+  .rating {
+    color: #ff9800;
+    font-weight: bold;
+    font-size: 0.7rem;
+    margin: 0;
+    display: inline;
+  }
+
   .klarna {
     display: none;
   }
 
   .row3 {
     position: relative;
-    right: -40rem;
+    right: -39rem;
     bottom: 6rem;
     align-items: center;
   }
