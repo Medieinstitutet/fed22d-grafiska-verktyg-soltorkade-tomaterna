@@ -16,10 +16,10 @@ applyBtn.addEventListener('click', openJob);
 applyClose.addEventListener('click', closeJob );
 
 cookiesBtn.addEventListener('click', closeCookies);
+cookies.addEventListener('click' , closeCookies);
 
 function closeCookies() {
-    cookies.classList.toogle('none');
-    console.log(cookies);
+    cookies.classList.toggle('none');
 }
 
 function menuOpen () {

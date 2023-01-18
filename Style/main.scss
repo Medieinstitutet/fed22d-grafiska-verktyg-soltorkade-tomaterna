@@ -65,8 +65,8 @@ body {
 }
 
 .closeMenu {
-  left: 8rem;
-  display: flex;
+  left: 22rem;
+  position: absolute;
 }
 
 .active {
@@ -87,21 +87,30 @@ body {
 }
 
 .background1 {
-  background-image: url(/assets/Images/Background-img-1.jpg);
+  background-image: url(/assets/Images/Background-img1-ny.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 1px 1px 1px;
-  height: 60vh;
+  height: 40vh;
 }
+
+.desktopPhoto {
+  display: none;
+}
+
 
 .cookies{
   display: none;
 }
 
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1 {
   color: white;
-  margin-left: 40px;
-  margin-right: 40px;
   padding-top: 30px;
   font-size: 20px;
 }
@@ -109,36 +118,35 @@ h1 {
 .next{
   background-color: transparent;
   border: none;
-  font-size: 3rem;
+  font-size: 2rem;
+  color: white;
 }
 
 .prev{
   background-color: transparent;
   border: none;
-  font-size: 3rem;
+  font-size: 2rem;
+  color: white;
 }
 
 .arrow{
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  color: red;
 }
 
 .arrow2{
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  color: red;
 }
 
 
 .text {
   color: white;
   font-size: 12px;
+  text-align: center;
 }
 
 .buttons {
-  align-items: center;
-  justify-content: center;
   display: flex;
   gap: 20px;
 }
@@ -171,22 +179,29 @@ h1 {
   color: black;
 }
 
+
 .textSearch {
   border-radius: 15px;
-  height: 2rem;
+  height: 0.5rem;
   width: 15rem;
-  text-align: center;
-  border: 1px solid black;
-  margin-left: 11px;
-  margin-top: 3px;
+  text-align: start;
+  border: 1px solid #000;
+  border: none;
+
 }
 
 .searchContainer {
-  background-color: white;
+  background-color: #fff;
   border-radius: 40px;
-  height: 13%;
-  width: 30%;
-  position: relative;
+}
+
+.border {
+  background-color: #fff;
+  border-radius: 40px;
+  border: 2px solid #000;
+  margin: 3px;
+  width: 18rem;
+  padding: 10px;
 }
 
 .background2 {
@@ -199,18 +214,13 @@ h1 {
 
 h2 {
   color: white;
-  font-weight: bolder;
-  display:flex;
-  justify-content: center;
-  margin-top: 0px;
   padding-top: 3rem; 
 }
 
 .textJob {
   color: white;
-  margin-left: 20px;
-  margin-right: 20px;
   font-size: 10px;
+  text-align: center;
 }
 
 .jobs {
@@ -218,8 +228,13 @@ h2 {
   height: 2.5rem;
   width: 7rem;
   font-weight: bold;
-  margin-left: 7rem;
-  margin-top: 15px;
+}
+
+.searchLogo {
+  font-size: 20px;
+  color: orange;
+  position: relative;
+  top: 2px;
 }
 
 .applyJob {
@@ -290,6 +305,13 @@ h2 {
 
 .section2 div h6 {
   margin: 0;
+}
+
+.btnNextOne {
+  color: black;
+  font-size: 2rem;
+  display: flex;
+  align-items: center
 }
 
 footer {
@@ -442,12 +464,89 @@ form {
     color: black;
   }
   
+  h1 {
+    justify-content: center;
+    display: flex;
+    font-size: 40px;
+  }
+
+  .next {
+    color: white;
+    font-size: 90px;
+  }
+
+  .prev {
+    color: white;
+    font-size: 90px; 
+  }
+
+  .arrow {
+    display: grid;
+  }
+
+  .text {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .fetch{
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 45px;
+    width: 7rem;
+  }
+
+  .delivery {
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #86E5FF;
+    color: #000;
+    height: 45px;
+    width: 7rem;
+  }
+
+  .searchLogo {
+    font-size: 25px;
+    color: orange;
+    top: 5px;
+    position: relative;
+    left: 15px;
+  }
+  
+
+
+  .arrow2 .next {
+    font-size: 50px;
+  }
+
+  .arrow2 .prev {
+    font-size: 50px;
+  }
+  
+  .textJob {
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    padding-top: 5rem;
+  }
+
+  .jobs {
+    margin-left: 20rem;
+    height: 4rem;
+    width: 11rem;
+    font-size: 17px;
+  }
+
   .section2 {
-    width: 10rem;
-    height: 7rem;
     margin-bottom: 2.5rem;
-    margin-left: 2rem;
+    margin-left: 4rem;
     font-size: large;
+    gap: 26px;
   }
   .section2 div {
     width: 10rem;
@@ -459,7 +558,14 @@ form {
     height: 5rem;
   }
 
-  .iconMobil { 
+  .btnNextOne {
+    color: black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center
+  }
+
+  .desktopPhoto {
     display: none;
   }
 
@@ -476,9 +582,9 @@ form {
 
   .row3 {
     position: relative;
-    right: -40rem;
     bottom: 6rem;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
   }
 
 }
@@ -500,6 +606,7 @@ form {
     align-items: center;
     font-size: 15px;
   }
+
 
   a {
     text-decoration: none;
@@ -554,13 +661,18 @@ form {
     display: contents;
   }
 
+  .text {
+    margin-left: 24px;
+    margin-right: 22px;
+  }
+
   hr {
     display: none;
   }
 
   h1 {
-    font-size: 40px;
-    margin-left: 20rem;
+    font-size: 30px;
+    margin-left: 3rem;
   }
 
   .jobs {
@@ -569,25 +681,32 @@ form {
 
   .textSearch {
     border-radius: 15px;
-    height: 1.5rem;
-    width: 30rem;
-    text-align: start;
-    border: 1px solid black;
-    margin-left: 10px;
-    margin-top: 4px;
+    height: 0.5rem;
+    width: 20rem;
+    border: 1px solid #000;
     border: none;
-    position: relative;
-    justify-content:space-between ;
+    font-size: 18px;
+    padding: 15px;
   }
   
   .searchContainer {
-    background-color: white;
+    background-color: #fff;
     border-radius: 40px;
-    height: 10%;
-    width: 33rem;
-    margin-left: 20rem;
+    width: 29rem;
+  }
+
+  .border {
+    background-color: #fff;
+    border-radius: 40px;
+    border: 2px solid #000;
+    width: 28rem;
+    padding: 3px;
+  }
+
+  .background1 {
+    justify-content: center;
     position: relative;
-    justify-content: space-between;
+    align-items: center;
   }
 
   .next {
@@ -604,7 +723,7 @@ form {
     font-size: large;
     margin-left: 2rem;
     justify-content: space-between;
-    gap: 20px;
+    gap: 15px;
     padding: 0;
   }
 
@@ -661,4 +780,7 @@ form {
     align-items: center;
   }
 
+  .desktopPhoto {
+    display: block;
+  }
 }
