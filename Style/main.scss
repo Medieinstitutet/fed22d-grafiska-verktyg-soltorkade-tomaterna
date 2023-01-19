@@ -100,6 +100,10 @@ body {
   display: none;
 }
 
+.desktopSearch {
+  display: none;
+}
+
 
 .cookies{
   display: none;
@@ -473,6 +477,14 @@ form {
   .accept:hover {
     background-color: #FF9800;
     color: black;
+  }
+  
+  .openMenu{
+    width: 70%;
+  }
+
+  .closeMenu {
+    left: 32rem;
   }
   
   h1 {
