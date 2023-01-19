@@ -5,6 +5,10 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+.mainLogo {
+  margin: auto;
+}
+
 .findJob {
   display: block;
   text-align: center;
@@ -111,7 +115,6 @@ body {
 
 h1 {
   color: white;
-  padding-top: 30px;
   font-size: 20px;
   font-weight: bold;
 }
@@ -370,12 +373,14 @@ figure {
 
 .row3 {
   display: flex;
+  justify-content: space-between;
 }
 
-.klarna {
-  position: relative;
-  left: -4rem;
+.klarnaLogo {
+  display: flex;
+  align-items: flex-end;
 }
+
 
 .news {
   font-weight: bold;
@@ -571,10 +576,15 @@ form {
 
   figure {
     display: flex;
-    position: relative;
-    left: -4rem;
+    margin-left: 0;
+  }
+
+
+  figcaption {
+    display: flex;
     align-items: center;
   }
+  
 
   .row2 .starFooter {
     color: orange;
@@ -601,8 +611,6 @@ form {
   .row3 {
     position: relative;
     bottom: 6rem;
-    display: flex;
-    justify-content: space-between;
   }
 
 }
@@ -612,6 +620,10 @@ form {
   .background1{
     height: 62vh;
     overflow: auto;
+  }
+
+  .mainLogo {
+    margin: unset;
   }
 
   .openMenu {
@@ -764,12 +776,13 @@ form {
 
   .gridContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
   }
 
   .row2 {
     align-items: center;
     display: flex;
+    margin: auto;
   }
 
   .klarna {
@@ -778,15 +791,16 @@ form {
 
   figure {
     display: flex;
-    position: relative;
-    left: -4rem;
-    align-items: center;
+    margin-right: 0;
+  }
+
+  figcaption {
+    font-size: 11px;
   }
 
   .row3 {
     position: relative;
     bottom: 0;
-    width: 24rem;
     align-items: center;
   }
 
