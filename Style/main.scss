@@ -54,8 +54,6 @@ body {
 .openMenu {
   position: fixed;
   display: none;
-  gap: 0;
-  flex-direction: column;
   width: 100%;
   transition: 0.7s;
   font-size: 30px;
@@ -244,6 +242,10 @@ h2 {
   border-radius: 20px;
   height: 50vh;
   margin: 20px;
+  width: 20rem;
+  overflow: auto;
+  position: absolute;
+  z-index: 1;
 }
 
 .applyJob h4 {
@@ -270,7 +272,7 @@ h2 {
   background-color: transparent;
   border: none;
   position: relative;
-  left: 90vw;
+  left: 57vw;
   font-size: larger;
 }
 
@@ -509,6 +511,10 @@ form {
     width: 7rem;
   }
 
+  .applyJob {
+    width: 35rem;
+  }
+
   .searchLogo {
     font-size: 25px;
     color: orange;
@@ -516,8 +522,6 @@ form {
     position: relative;
     left: 15px;
   }
-  
-
 
   .arrow2 .next {
     font-size: 50px;
@@ -612,6 +616,20 @@ form {
   .background1{
     height: 62vh;
     overflow: auto;
+  }
+
+  .background2{
+    height: 74vh;
+  }
+
+  .applyJob {
+    height: 26rem;
+    width: 47rem;
+  }
+
+  .closeApply {
+    left: 70vw;
+    z-index: 1;
   }
 
   .openMenu {
