@@ -48,15 +48,31 @@ const sideTwo = document.querySelector('.background2');
 let nextBtn = document.querySelector('.next');
 let prevBtn = document.querySelector('.prev');
 
+let sideNext = document.querySelector('#sideNext');
+let sidePrev = document.querySelector('#sidePrev');
+
 nextBtn.addEventListener('click', nextImage);
 prevBtn.addEventListener('click', prevImage);
+
+sideNext.addEventListener('click', nextImage2);
+sidePrev.addEventListener('click', prevImage2);
 
 function nextImage () {
     sideOne.classList.toggle('none');
     sideTwo.classList.remove('none');
 }
 
+function nextImage2 () {
+    sideOne.classList.remove('none');
+    sideTwo.classList.toggle('none');
+}
+
 function prevImage () {
+    sideTwo.classList.remove('none');
+    sideOne.classList.toggle('none');
+}
+
+function prevImage2 () {
     sideOne.classList.remove('none');
     sideTwo.classList.toggle('none');
 }

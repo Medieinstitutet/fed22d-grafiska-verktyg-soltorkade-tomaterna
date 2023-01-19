@@ -58,8 +58,6 @@ body {
 .openMenu {
   position: fixed;
   display: none;
-  gap: 0;
-  flex-direction: column;
   width: 100%;
   transition: 0.7s;
   font-size: 30px;
@@ -244,17 +242,19 @@ h2 {
 .applyJob {
   background-color: #f1f1f1;
   border: 1px solid;
-  border-radius: 20px;
-  height: 50vh;
+  border-radius: 35px;
+  height: 43vh;
   margin: 20px;
+  width: 16rem;
+  overflow: auto;
+  position: absolute;
+  z-index: 1;
 }
 
 .applyJob h4 {
   justify-content: center;
   display: flex;
-  font-size: x-large;
-  margin-top: 4rem;
-  font-weight: bold;
+  margin-top: 1rem;
 }
 
 .applyJob a {
@@ -273,7 +273,7 @@ h2 {
   background-color: transparent;
   border: none;
   position: relative;
-  left: 90vw;
+  left: 53vw;
   font-size: larger;
 }
 
@@ -514,6 +514,15 @@ form {
     width: 7rem;
   }
 
+  .applyJob {
+    width: 24rem;
+    height: 27rem;
+  }
+
+  .closeApply{
+    left: 20rem;
+  }
+
   .searchLogo {
     font-size: 25px;
     color: orange;
@@ -521,8 +530,6 @@ form {
     position: relative;
     left: 15px;
   }
-  
-
 
   .arrow2 .next {
     font-size: 50px;
@@ -697,7 +704,7 @@ form {
     margin-right: 22px;
   }
 
-  hr {
+  header hr {
     display: none;
   }
 
