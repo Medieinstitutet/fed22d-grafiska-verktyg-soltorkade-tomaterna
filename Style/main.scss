@@ -132,12 +132,12 @@ h1 {
 
 .arrow{
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
 .arrow2{
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
 
@@ -279,7 +279,7 @@ h2 {
 /*******************************Mostapha***********************/
 
 .background1 {
-  height: 54vh;
+  height: 64vh;
 }
 
 .section2 {
@@ -545,7 +545,6 @@ form {
   }
 
   .jobs {
-    margin-left: 20rem;
     height: 4rem;
     width: 11rem;
     font-size: 17px;
@@ -571,7 +570,7 @@ form {
     color: black;
     font-size: 2.5rem;
     display: flex;
-    align-items: center
+    align-items: center;
   }
 
   .desktopPhoto {
@@ -621,6 +620,10 @@ form {
   .background1{
     height: 62vh;
   }
+  .background2 {
+    height: 62vh;
+  }
+
   .cookies {
     display: none;
   }
@@ -705,9 +708,6 @@ form {
     margin-left: 3rem;
   }
 
-  .jobs {
-    margin-left: 35rem;
-  }
 
   .textSearch {
     border-radius: 15px;
@@ -770,6 +770,10 @@ form {
   .fa-chevron-right:before {
       content: "\f054";
       display: none;
+  }
+
+  .btnNextOne {
+    display: none;
   }
 
   .section2 div {
