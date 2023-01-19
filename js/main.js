@@ -19,7 +19,7 @@ cookiesBtn.addEventListener('click', closeCookies);
 cookies.addEventListener('click' , closeCookies);
 
 function closeCookies() {
-    cookies.classList.toggle('none');
+    cookies.style.display ='none';
 }
 
 function menuOpen () {

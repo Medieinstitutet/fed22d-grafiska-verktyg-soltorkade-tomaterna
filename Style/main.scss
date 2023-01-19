@@ -275,13 +275,6 @@ h2 {
 }
 
 
-
-/*******************************Mostapha***********************/
-
-.background1 {
-  height: 54vh;
-}
-
 .section2 {
   display: flex;
   justify-content: space-evenly;
@@ -328,7 +321,6 @@ footer {
   background-color: #86e5ff;
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 figure {
@@ -429,6 +421,10 @@ form {
 }
 
 @media screen and (min-width: 820px) {
+
+  .background1 {
+    overflow: auto;
+  }
 
   .cookies {
     display: flex;
@@ -568,10 +564,7 @@ form {
   }
 
   .btnNextOne {
-    color: black;
     font-size: 2.5rem;
-    display: flex;
-    align-items: center
   }
 
   .desktopPhoto {
@@ -620,9 +613,7 @@ form {
 
   .background1{
     height: 62vh;
-  }
-  .cookies {
-    display: none;
+    overflow: auto;
   }
 
   .openMenu {
@@ -733,11 +724,7 @@ form {
     padding: 3px;
   }
 
-  .background1 {
-    justify-content: center;
-    position: relative;
-    align-items: center;
-  }
+
 
   .next {
     color: white;
@@ -760,6 +747,10 @@ form {
   .section2-header {
     padding: 0; 
     margin: 0;
+  }
+
+  .btnNextOne {
+    display: none;
   }
 
   .fa-solid, .fas {
