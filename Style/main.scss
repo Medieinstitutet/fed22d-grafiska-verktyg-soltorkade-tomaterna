@@ -210,7 +210,7 @@ h1 {
   background-repeat: no-repeat;
   background-size:cover;
   box-shadow: 1px 1px 1px;
-  height: 40vh;
+  height: 47vh;
 }
 
 h2 {
@@ -731,31 +731,21 @@ form {
 
   .section2 {
     display: grid;
-    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr ;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
     font-size: large;
     margin-left: 2rem;
     justify-content: space-between;
-    gap: 15px;
     padding: 0;
   }
 
   .section2-header {
     padding: 0; 
     margin: 0;
+    padding-top: 13px;
   }
 
   .btnNextOne {
     display: none;
-  }
-
-  .fa-solid, .fas {
-    font-weight: 900;
-    display: none;
-  }
-  
-  .fa-chevron-right:before {
-      content: "\f054";
-      display: none;
   }
 
   .btnNextOne {
