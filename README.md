@@ -13,6 +13,9 @@ Fonten valde vi för simpliciteten och tillgängligheten, enkel och bra.
 För basdesignen har vi tagit inspiration från diverse andra restaurang/budföretag.
 Loggan är egendesignad i programmet Canva.
 
+______________________
+
+
 Contributors: YoussefEchelhi, MostaphaEchelhi, YounesEch
 
 Desktop
