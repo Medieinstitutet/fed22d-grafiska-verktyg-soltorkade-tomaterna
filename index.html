@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/Style/main.css">
+  <meta name="description" content="Mjölk, bröd, bananer, chips, schampo - ja, allt du behöver där hemma, 
+  med leveranstid från 15 minuter. Titta in hos vår helt egna butikskedja 
+  för matvaruleveranser, Swemat market. Beställ matvaror för som-i-butiken-priser,
+  med blixtsnabb leverans!">
+  <link rel="stylesheet" href="Style/main.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <script src="https://kit.fontawesome.com/f8fe1c9b9c.js" crossorigin="anonymous"></script>
   <title>SWEMAT</title>
@@ -20,131 +24,161 @@
         <span class="stick2"></span>
         <span class="stick"></span>
       </button>
+      <img class="mainLogo" src="assets/Images/Main-Logo.png" height="80" width="80" alt="Picture om cutlery with a title below">
       <nav class="openMenu">
         <div class="closeMenu">
           <i class="fa-solid fa-x"></i>
-        </div>
-        <button>
+        </div> 
+        <button class="search">
           <i class='bx bx-search'></i>
-        </button>
-        <button class="cross">
-          <i class="fa-light fa-xmark"></i>
         </button>
         <br>
         <a href="#">Menu</a>
         <hr>
-        <a href="#">Kontakta</a>
-        <hr>
+        <div class="mobileContact">
+          <a href="#">Kontakt</a>
+        </div>
+          <hr>
         <a href="#">Om oss</a>
         <hr>
-        <a href="#">Lediga jobb</a>
+        <a href="#" class="searchJob">Lediga jobb</a>
         <hr>
         <a href="#">App</a>
         <hr>
-        <img src="/assets/Images/Menu-Logo.png" width="400" height="400" >
+        <button class="desktopContact">
+          <a href="#">Kontakt</a>
+        </button>
+        <img  class="desktopLogo" src="assets/Images/Menu-Logo.png" width="400" height="400" alt="Picture om cutlery with a title below" >
+        <button class="desktopSearch">
+          <i class='bx bx-search'></i>
+        </button>
       </nav>
-      <img src="/assets/Images/Main-Logo.png" height="80" width="80">
+
     </div>
   </header>
 
   <section class="section1">
       <section class="background1">
         <div class="cookies">
-          <h3></h3>
-          <p></p>
-          <button>Accept</button>
-        </div>
-        <h1>Matvaror till dörren - från 15 min</h1>
-          <div class="arrow">
-            <button class="prev">
-              <span><i class="fa-solid fa-chevron-left"></i></span>
-            </button>
-            <p class="text">Mjölk, bröd, bananer, chips, schampo - ja, allt du behöver där hemma, 
-            med leveranstid från 15 minuter. Titta in hos vår helt egna butikskedja 
-            för matvaruleveranser, Swemat market. Beställ matvaror för som-i-butiken-priser,
-            med blixtsnabb leverans!</p>
-            <button class="next">
-              <span><i class="fa-solid fa-chevron-right"></i></span>
-            </button>
-        </div>
-          <div class="buttons">
-            <button class="fetch">Hämta</button>
-            <button class="delivery">Leverans</button>
+          <div>
+            <h3 class="cookiesHeading">Cookies och liknande tekniker</h3>
+            <p class="cookiesText">Vi använder cookies och andra<br> webbspårningstekniker för att ge dig<br> bästa möjliga service,
+              analysera<br> användningen och leverera<br> marknadsföringskampanjer<br> skräddarsydda för dina intressen.
+            </p>
           </div>
-            <br>
-          <label for=""><input class="textSearch" placeholder="Din adress (t ex Drottninggatan 1C)">
-          <i class='bx bx-search'></i>
-          </label>
+          <div class="buttonContainer">
+            <button class="accept">Acceptera</button>
+          </div>
+        </div>
+        <div class="center">
+          <h1>Matvaror till dörren - från 15 min</h1>
+            <div class="arrow">
+              <button class="prev" aria-label="Arrowbutton to left">
+                <span><i class='bx bx-chevron-left'></i></span>
+              </button>
+              <p class="text">Mjölk, bröd, bananer, chips, schampo - ja, allt du behöver där hemma, 
+              med leveranstid från 15 minuter. Titta in hos vår helt egna butikskedja 
+              för matvaruleveranser, Swemat market. Beställ matvaror för som-i-butiken-priser,
+              med blixtsnabb leverans!</p>
+              <button class="next" aria-label="Arrowbutton to right">
+                <span><i class='bx bx-chevron-right'></i></span>
+              </button>
+          </div>
+            <div class="buttons">
+              <button class="fetch">Hämta</button>
+              <button class="delivery">Leverans</button>
+            </div>
+              <br>
+            <div class="searchContainer">
+              <div class="border"> 
+              <label>
+                <input class="textSearch" placeholder="Din adress (t ex Drottninggatan 1C)">
+                <span class="searchLogo">
+                  <i class='bx bx-search'></i>
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
       </section>
     <section class="background2 none">
-      <h2>Jobba hos oss</h2>
-      <div class="arrow2" id="arrow2">
-        <button class="prev">
-          <i class="fa-solid fa-chevron-left"></i>
-        </button>
-         <p class="textJob">Swemat är idag en av  Sveriges populäraste marknadsplats för hemkörning av restaurangmat. Vi är en del av det globala företaget Delivery Hero Holding med säte i Berlin, Tyskland, och finns representerade i mer än 40 länder. Vi har idag cirka 4000 anslutna restauranger i Sverige som erbjuder utkörning och takeaway över hela landet. 
+      <div class="center">
+        <h2>Jobba hos oss</h2>
+        <div class="arrow2" id="arrow2">
+          <button class="prev" id="sidePrev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <p class="textJob">Swemat är idag en av  Sveriges populäraste marknadsplats för hemkörning av restaurangmat. Vi är en del av det globala företaget Delivery Hero Holding med säte i Berlin, Tyskland, och finns representerade i mer än 40 länder. Vi har idag cirka 4000 anslutna restauranger i Sverige som erbjuder utkörning och takeaway över hela landet. 
           <br>
           <br>
           Hos oss jobbar strax under 500 personer inom försäljning, marknadsföring, produkt, ekonomi, kundtjänst och logistik</p>
-          <button class="next">
+          <button class="next" id="sideNext">
             <i class="fa-solid fa-chevron-right"></i>
           </button>
-      </div>
-      <button class="jobs"> Lediga jobb</button>
+          </div>
+          <button class="jobs"> Lediga jobb</button>
+        <div class="applyJob none">
+          <button class="closeApply">
+            <i class="fa-solid fa-x"></i>
+          </button>
+          <h4> Vill du jobba med oss?</h4>
+          <a href="#"> Orderplockare market - Borås</a>
+          <hr>
+          <a href="#"> Shift Leader market - Stockholm</a>
+          <hr>
+          <a href="#"> Butiksmedarbetare market - Helsingborg</a>
+          <hr>
+          <a href="#"> Orderplockare Göteborg - foodora market</a>
+          <hr>
+          <a href="#"> Biträdande Butikschef market - Stockholm</a>
+          <hr>
+        </div>    
+      </div>        
     </section>
-      <div class="applyJob none">
-        <button class="closeApply">
-          <i class='bx bx-exit'></i>
-        </button>
-        <h4> Vill du jobba med oss?</h4>
-        <a href="#"> Orderplockare market - Borås</a>
-        <hr>
-        <a href="#"> Shift Leader market - Stockholm</a>
-        <hr>
-        <a href="#"> Butiksmedarbetare market - Helsingborg</a>
-        <hr>
-        <a href="#"> Orderplockare Göteborg - foodora market</a>
-        <hr>
-        <a href="#"> Biträdande Butikschef market - Stockholm</a>
-        <hr>
-      </div>
   </section>
 
   <h3 class="section2-header">Våra 5 mest populära leverans restauranger</h3>
   <section class="section2">
     <div>
-      <img src="assets/Images/Thai-card.png" width="80" height="50">
+      <img src="assets/Images/Thai-card.png" width="80" height="50" alt="Picture with different kind om Thai dishes">
       <h4>Thai Stugan</h4>
       <h6>Stockholm/Solna</h6>
     </div>
     <div>
-      <img src="assets/Images/Pizza-card.png" width="80" height="50">
+      <img src="assets/Images/Pizza-card.png" width="80" height="50" alt="Picture of a mozarella pizza">
       <h4>Forno Italia</h4>
       <h6>Stockholm/Odenplan</h6>
     </div>
     <div>
-      <img src="assets/Images/Sushi-card.jpg" width="80" height="50">
+      <img src="assets/Images/Sushi-card.jpg" width="80" height="50" alt="Picture of a sushi dish">
       <h4>Moilt Sushi</h4>
       <h6>Stockholm/Rotebro</h6>
     </div>
-    <i class="fa-solid fa-chevron-right"></i>
-    <div>
-      <img src="assets/Images/kebab-card.jpg" width="80" height="50"> 
+    <span class="btnNextOne">
+      <i class="fa-solid fa-chevron-right"></i>
+    </span>
+    <div class="desktopPhoto">
+
+      <img src="assets/Images/kebab-card.jpg" width="80" height="50" alt="Picture of a kebab dish"> 
       <h4>City Kebab</h4>
       <h6>Stockholm/Kungsvägen</h6>
     </div>
-    <div>
-      <img src="assets/Images/Burger-card.jpg" width="80" height="50">
+    <div class="desktopPhoto">
+      <img src="assets/Images/Burger-card.jpg" width="80" height="50" alt="Picture of two hamburgers">
       <h4>Bastard Burger</h4>
       <h6>Stockholm/Sollentuna</h6>
     </div>
   </section>
 
 
-<footer>
+<footer class="gridContainer">
   <div class="row1">
-    <img class="facebook" src="/assets/Images/facebook-logo-png.png" height="35" width="35">
+    <img class="facebook" src="assets/Images/facebook-logo-png.png" height="35" width="35" alt="Picture of Facebook logo">
     <p class="swemat">Swemat</p>
+    <figure>
+      <img class="klarna2" src="assets/Images/Klarna-logo-png.png" height="35" width="70" alt="Picture of Klarna logo">
+      <figcaption>Ⓒ 2023, SWEMAT betalningsmetoder</figcaption>
+    </figure>
   </div>
   <div class="row2">
     <div>
@@ -152,16 +186,15 @@
       <i class="fa-sharp fa-solid fa-star"></i>
       <i class="fa-sharp fa-solid fa-star"></i>
       <i class="fa-sharp fa-solid fa-star"></i>
-      <i class="fa-solid fa-star-half-stroke"></i>
+      <span class="starFooter"><i class="fa-solid fa-star-half-stroke"></i></span>
+      <p class="rating">Kunder betygsätter oss 4.6/5 baserat på 88 recensioner.</p>
     </div>
-    <p class="rating">Kunder betygsätter oss 4.6/5 baserat på 88 recensioner.</p>
   </div>
   <div class="row3">
-    <div>
-      <img class="klarna" src="/assets/Images/Klarna-logo-png.png" height="60" width="170">
+    <div class="klarnaLogo">
+      <img class="klarna" src="assets/Images/Klarna-logo-png.png" height="40" width="80" alt="Picture of Klarna logo">
     </div>
-    
-    <div>
+    <div class="subscribeContainer">
       <p class="news">Anmäl dig till vårt nyhetsbrev</p>
       <form>
       <input class="mail" placeholder="Ange e-postadress">
